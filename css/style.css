@@ -46,10 +46,9 @@ ul {
 }
 
 body {
-  overflow: hidden;
+  background-color: #111;
   color: white;
   position: relative;
-  height: 100vh;
 }
 a {
   color: white;
@@ -71,26 +70,33 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.header .container .projects {
+.header .container .logo {
+  font-size: 22px;
+}
+.header .container .logo:hover {
+  color: #00bfbf;
+  transition: 0.3s;
+}
+.header .container a.projects {
   align-self: flex-start;
-  font-size: 24px;
+  font-size: 20px;
   width: fit-content;
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
     0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
-.header .container .projects:hover {
+.header .container a.projects:hover {
   background-color: #00bfbf;
   transition: all 0.5s ease;
 }
-.header .container ul {
+.header .container ul:not(.skills) {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-.header .container a {
+.header .container ul a:not(.logo) {
   padding: 10px;
   border-radius: 50%;
   display: flex;
@@ -124,7 +130,7 @@ a {
   width: 120px;
 }
 
-.header .container a:hover {
+.header .container a:hover:not(.logo) {
   background-color: #00bfbf;
   transition: all 0.5s ease;
 }
@@ -147,4 +153,33 @@ a {
 .hero .container .title {
   margin-bottom: 10px;
   font-size: 24px;
+}
+
+/* projects */
+.bodysection .skill {
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+ul.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+ul.skills li {
+  color: #eee;
+  width: 150px;
+  border-radius: 8px;
+  background-color: #333;
+  padding: 10px;
+}
+ul.skills li:hover {
+  transition: 0.3s;
+  scale: 1.1;
+}
+ul.skills img {
+  width: 80px;
+  object-fit: cover;
 }

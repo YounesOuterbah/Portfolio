@@ -150,6 +150,16 @@ a {
   font-size: 62px;
   margin-bottom: 20px;
 }
+.hero .container .name span {
+  padding: 4px;
+  border-radius: 4px;
+  font-family: "Space Mono", monospace;
+}
+.hero .container .name span:hover {
+  font-family: "Space Mono", monospace;
+  background: white;
+  color: black;
+}
 .hero .container .title {
   margin-bottom: 10px;
   font-size: 24px;

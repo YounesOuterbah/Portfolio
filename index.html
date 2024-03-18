@@ -10,6 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Younes Outerbah</title>
   </head>
@@ -35,9 +36,11 @@
     <!-- start hero section -->
     <div class="hero">
       <div class="container">
-        <h1 class="name">Hey, i'm Younes</h1>
-        <p class="title">Full stack Developer</p>
-        <p>
+        <div data-aos="zoom-in-up">
+          <h1 class="name">Hey, i'm <span data-value="YOUNES">YOUNES</span></h1>
+          <p class="title">Full stack Developer</p>
+        </div>
+        <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
           I'm passionate about software engineering, building web application, and lifting weights!
           While I'm not coding or lifting weights I enjoy playing video games.
         </p>
@@ -50,5 +53,9 @@
     <script src="https://unpkg.com/ios-inner-height@1.1.1/dist/ios-inner-height.js"></script>
     <script src="./js/three.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

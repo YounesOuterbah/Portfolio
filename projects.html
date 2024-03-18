@@ -10,6 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Projects</title>
   </head>
@@ -27,7 +28,7 @@
     <div class="bodysection">
       <div class="container">
         <h1 class="skill">SKILLS</h1>
-        <ul class="skills">
+        <ul class="skills" data-aos="fade-up">
           <li>
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
@@ -99,5 +100,9 @@
     </div>
 
     <script src="./js/three.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

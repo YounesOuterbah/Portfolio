@@ -53,6 +53,7 @@ body {
 a {
   color: white;
   text-decoration: none;
+  transition: all 0.8s ease;
 }
 
 #scene {
@@ -70,13 +71,6 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.header .container .logo {
-  font-size: 22px;
-}
-.header .container .logo:hover {
-  color: #00bfbf;
-  transition: 0.3s;
-}
 .header .container a.projects {
   align-self: flex-start;
   font-size: 20px;
@@ -84,12 +78,12 @@ a {
   padding: 8px;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.5s ease;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
     0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
 .header .container a.projects:hover {
   background-color: #00bfbf;
-  transition: all 0.5s ease;
 }
 .header .container ul:not(.skills) {
   display: flex;
@@ -132,7 +126,6 @@ a {
 
 .header .container a:hover:not(.logo) {
   background-color: #00bfbf;
-  transition: all 0.5s ease;
 }
 .header .container a .icon {
   font-size: 20px;
@@ -183,10 +176,10 @@ ul.skills li {
   width: 150px;
   border-radius: 8px;
   background-color: #333;
+  transition: 0.5s;
   padding: 10px;
 }
 ul.skills li:hover {
-  transition: 0.3s;
   scale: 1.1;
 }
 ul.skills img {

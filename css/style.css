@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+::selection {
+  background: #00bfbf;
+}
+
+ul {
+  list-style: none;
+}
+
+/* container */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  overflow: hidden;
+  color: white;
+  position: relative;
+  height: 100vh;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#scene {
+  z-index: -1;
+  top: 0;
+  position: fixed;
+}
+
+/* header */
+.header {
+  padding: 60px 0;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .projects {
+  align-self: flex-start;
+  font-size: 24px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.header .container .projects:hover {
+  background-color: #00bfbf;
+  transition: all 0.5s ease;
+}
+.header .container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.header .container a {
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 5px -1px rgba(134, 134, 134, 0.2), 0px 6px 10px 0px rgba(114, 114, 114, 0.2),
+    0px 1px 18px 0px rgba(112, 112, 112, 0.2);
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+}
+.header .container a:hover::after {
+  position: absolute;
+  padding: 5px;
+  border-radius: 5px;
+  height: 20px;
+  top: 5px;
+  left: 50px;
+  background-color: #00bfbf;
+}
+.header .container a.mail:hover::after {
+  content: "younesouterbah1@gmail.com";
+  width: 200px;
+}
+.header .container a.ank:hover::after {
+  content: "younes outerbah";
+  width: 120px;
+}
+.header .container a.git:hover::after {
+  content: "younes outerbah";
+  width: 120px;
+}
+
+.header .container a:hover {
+  background-color: #00bfbf;
+  transition: all 0.5s ease;
+}
+.header .container a .icon {
+  font-size: 20px;
+}
+
+/* hero */
+.hero .container {
+  display: flex;
+  max-width: 580px;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 500px);
+}
+.hero .container .name {
+  font-size: 62px;
+  margin-bottom: 20px;
+}
+.hero .container .title {
+  margin-bottom: 10px;
+  font-size: 24px;
+}

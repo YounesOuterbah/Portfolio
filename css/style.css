@@ -148,6 +148,7 @@ a {
   border-radius: 4px;
   font-family: "Space Mono", monospace;
   transition: 0.5s;
+  cursor: none;
 }
 .hero .container .name span:hover {
   font-family: "Space Mono", monospace;
